@@ -25,6 +25,7 @@ void init_lexer(void) {
     insert_trie(root, "interaction", INTERACTION);
     insert_trie(root, "printf", PRINTF);
     insert_trie(root, "scanf", SCANF);
+    insert_trie(root, "scanline", SCANLINE);
     insert_trie(root, "using", USING);
     insert_trie(root, "let", LET);
     insert_trie(root, "int", INT);
@@ -32,8 +33,13 @@ void init_lexer(void) {
     insert_trie(root, "char", CHAR);
     insert_trie(root, "string", STRING);
     insert_trie(root, "bool", BOOL);
+    insert_trie(root, "true", TOKEN_TRUE);
+    insert_trie(root, "false", TOKEN_FALSE);
     insert_trie(root, "const", CONST);
-    insert_trie(root, "immediate", IMMEDIATE);
+    insert_trie(root, "constexpr", CONSTEXPR);
+    insert_trie(root, "extern", EXTERN);
+    insert_trie(root, "builtin", BUILTIN);
+    insert_trie(root, "continue", CONTINUE);
 }
 
 void terminate_lexer(void) {

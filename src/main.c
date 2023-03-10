@@ -6,7 +6,7 @@ int main() {
     init_lexer();
 
     // Create the buffer
-    char *buffer = create_buffer_from_file("./example/eg1.pds");
+    char *buffer = create_buffer_from_file("./example/tokens.pds");
     printf("%s\n", buffer);
 
     // Create the lexer

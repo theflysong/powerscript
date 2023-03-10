@@ -5,8 +5,10 @@
 typedef enum {
     TOKEN_EOF = -1,
     NUMBER,
-    ADD,
+    PLUS,
+    MINUS,
     INCREASE,
+    DECREASE,
     IDENTIFIER,
     IF,
     ELSE,
@@ -19,11 +21,11 @@ typedef enum {
     CASE,
     DEFAULT,
     BREAK,
-    FUNC,
-    RETURN,
+    CONTINUE,
     INTERACTION,
     PRINTF,
     SCANF,
+    SCANLINE,
     USING,
     LET,
     INT,
@@ -31,8 +33,14 @@ typedef enum {
     CHAR,
     STRING,
     BOOL,
+    TOKEN_TRUE,
+    TOKEN_FALSE,
     CONST,
-    IMMEDIATE
+    CONSTEXPR,
+    FUNC,
+    RETURN,
+    EXTERN,
+    BUILTIN
 } token_type;
 
 typedef struct {
